@@ -1,13 +1,66 @@
 {% load i18n %}
-<footer class="footer container-fluid">
-    {% block footer %}
-        {% comment %}
-            Could be used for displaying links to privacy policy, terms of service, etc.
-            We have a CSS class defined:
-                <ul class="footer_links inline">
-                    ...
-                    <p>testerino123</p>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container-fluid">
+    <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+                {% include "partials/brand.html" %}
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc felis, dapibus ac eros ac, vehicula tincidunt risus. Sed sollicitudin malesuada augue, eu euismod libero faucibus et. Ut commodo ac nunc ac consectetur.</p>
+                <p>© 2018 {{ shop_name }}, Alle rechten voorbehouden</p>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="/catalogue/">Alle Producten</a></li>
+                        <li><a href="/offers/">Uitverkoop</a></li>
+                        <li><a href="/accounts/profile/">Account</a></li>
+                        <li><a href="/basket/">Winkelwagen</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Levering & Verzending</a></li>
+                        <li><a href="#">Privacybeleid</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Volg ons</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
                 </ul>
-         {% endcomment %}
-    {% endblock %}
-</footer>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Nieuwsbrief</h4>
+                <p>Meld u zich aan voor onze nieuwsbrief?</p>
+                <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="E-mailadres">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </p>              
+                <!-- <h4>Zoeken</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="search-footer">
+                    <form method="get" action="{% url 'search:search' %}" class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input placeholder="Zoeken"{{ search_form.q }}
+                        </div>
+                        <button type="submit" value="{% trans "Zoeken" %}" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+</div>

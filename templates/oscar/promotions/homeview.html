@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}
+   {{ block.super }} Home
+{% endblock %}
+
+{% block headertext %}{{ range.name }}{% endblock %}
+
+{% block content %}
+<div class='homepage-test'>
+    <div class='aanbieding'>
+        <img src="http://via.placeholder.com/1150x250" alt="aanbieding">
+        <p>Aanbieding <a href="#" class="btn button-background">Lees meer</a></p>
+    </div>
+    <br></br>
+    <div class="cardyuh">
+        <img src="http://via.placeholder.com/360x360" alt="Aanbieding1">
+        <div class="containeryuh">
+            <h4><b>Aanbieding 1</b></h4> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Aenean tempus, elit sed laoreet ultrices, 
+               erat est condimentum sem, 
+               quis fringilla urna ipsum ut arcu.</p>
+            <a href="#" class="btn btn-primary">Lees meer</a>
+            <br></br>
+        </div>
+    </div>
+    <div class="cardyuh">
+        <img src="http://via.placeholder.com/360x360" alt="Aanbieding2">
+        <div class="containeryuh">
+            <h4><b>Aanbieding 2</b></h4> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Aenean tempus, elit sed laoreet ultrices,
+               erat est condimentum sem,
+               quis fringilla urna ipsum ut arcu.</p>
+            <a href="#" class="btn btn-primary">Lees meer</a>
+            <br></br> 
+        </div>
+    </div>
+    <div class="cardyuh">
+        <img src="http://via.placeholder.com/360x360" alt="Aanbieding3">
+        <div class="containeryuh">
+            <h4><b>Aanbieding 3</b></h4> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Aenean tempus, elit sed laoreet ultrices,
+               erat est condimentum sem,
+               quis fringilla urna ipsum ut arcu.</p>
+            <a href="#" class="btn btn-primary">Lees meer</a>
+            <br></br>
+        </div>
+    </div>
+    <br></br>
+    <div class="nieuwsbericht">
+        <img src="http://via.placeholder.com/1150x250" alt="nieuwsbericht">
+        <p>Nieuwsbericht <a href="#" class="btn button-background">Lees meer</a></p>
+    </div>
+</div>
+{% endblock content %}
