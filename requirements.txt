@@ -30,7 +30,7 @@ openpyxl==2.4.0
 parse==1.8.2
 pbr==4.0.3
 phonenumberslite==8.9.5
-Pillow==5.1.0
+Pillow==6.2.0
 purl==1.4
 pyfiglet==0.7.5
 pyquery==1.4.0
